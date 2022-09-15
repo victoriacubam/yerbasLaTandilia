@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+           <a href="inicio.html"><img id= "logo" src="images/logo.jpg" alt="Logo"></a> 
+            <div class="btnMenu">
+                <a href=""><img src="images/menu.png" alt="menu"></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="navegacion">
+                 <li><a href="inicio.html">Inicio</a></li>
+                 <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <div class="contenedorContacto">
+        <div class="contenedorTablayRedes">
+            <div class="tablaDinamica">
+                <p>¡Dejanos tu opinion sobre nuestros productos!</p>
+                <form id="formEditar" class="oculto" >
+                        <h2>Editar comentario</h2>
+                        <input id="inputEditarNombre" type="text" name="nomb" placeholder="Nombre" required>
+                        <input id="inputEditarComentario" type="text" name="coment" placeholder="Comentario" required>
+                        <button id="btnFormularioEditar" type="button" class="botonesFormulario" id="btnEditarForm">Editar comentario</button>                        
+                </form>
+                <table id="tablaComentarios">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Comentario</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id ="seccionComentarios">
+                                            
+                    </tbody>
+                    
+                </table>
+                
+                <form id="formComentarios">
+                    <input type="text" name="nombreFormulario" id="nombreComentario" value=""  placeholder="Nombre" required>
+                    <input type="text" name="comentarioFormulario"  id="comentario" value=""  placeholder="Comentario" required>
+                    <button type="submit" class="botonesFormulario" id="btnAgregar">Agregar comentario</button>
+                </form>
+                <p id="mensajeTabla"></p>
+            </div>
+           
+            <div class="tituloRedes">
+                        <h2>Nuestras redes sociales</h2>
+                        <div class="columnaRedes">
+                            <div class="redesIzquierda">
+                                <div class="columna2">
+                                    <div>
+                                        <img class="redesSociales" src="images/instagram.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>@yerbaslatandilia</p>
+                                    </div>
+                                </div>
+                                <div class="columna2">
+                                    <div>
+                                        <img class="redesSociales" src="images/whatsapp.png" alt="">
+                                    </div>
+                                    <div>
+                                        <P>+549-249-4329161</P>
+                                    </div>
+                                </div>
+                                <div class="columna2">
+                                    <div>
+                                        <img class="redesSociales" src="images/mail.png" alt="">
+                                    </div>
+                                    <div>
+                                        <P>yerbaslatandilia@gmail.com</P>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="redesDerecha">
+                                <p>Tandil, Buenos Aires</p>
+                                <hr/>
+                                <p>Argentina</p>
+                            </div>
+                        </div>          
+            </div>          
+
+        </div>          
+
+            <div class="columnaFormulario">
+                    <h2>Suscribite a nuestro Newsletter y recibi noticias y promociones! </h2>
+                    <form id="formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" value="" required> 
+                        <label for="apellido">Apellido:</label>
+                        <input id="apellido" type="text" value="" required> 
+                        <label for="mail">Mail</label>
+                        <input id="mail" type="email" value="" required> 
+                        <label for="mensaje">Nos queres dejar un mensaje?:</label> 
+                        <textarea name="mensaje" cols="30" rows="5"></textarea>
+                        <label for="captcha">Resolvé el siguiente captcha para verificar que eres humano</label> 
+                        <p id="codigoCaptcha"></p> 
+                        <input id="captcha" type="text" value="" required> 
+                        <p id="errorCaptcha"></p>
+                        <p id="validacion"></p>
+                        <button type="submit" class="botonesFormulario" id="btnEnviar">Enviar formulario</button>
+                        <input type="reset" value="Limpiar formulario">
+                    </form>
+            </div>
+    </div>
+  
+    <footer>
+        <div class="piePrimero">
+            <div class="columna1"><p>Contactanos</p></div>
+            <div class="pieSocial">
+                <div class="columna2">
+                    <div>
+                        <img src="images/instagram.png" alt="Instagram">
+                    </div>
+                    <div>
+                        <p>@yerbaslatandilia</p>
+                    </div>
+                </div>
+                <div class="columna2">
+                    <div >
+                        <img src="images/whatsapp.png" alt="WhatsApp">
+                    </div>
+                    <div>
+                        <p>+549-249-4329161</P>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="pieSegundo">
+            <p class="copyright">© Copyright Yerbas La Tandilia - 2022.</p>
+            <p class="copyright">Todos los derechos reservados.</p>
+        </div>  
+    </footer>
+  
+    <script src="JS/captcha.js"></script>
+    <script src="JS/menu.js"></script>
+    <script src="JS/apiRest.js"></script>
+    
+    
+</body>
+</html> 

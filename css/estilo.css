@@ -1,0 +1,712 @@
+body,html {
+    background-color: #f7efe6;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+p {
+    text-align: justify;
+    color: #383633; 
+}
+
+/*ENCABEZADO*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDDDC3;
+    width: 100%;
+    height: 7.75rem;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+#logo {
+    padding-left: 0.625rem;
+    width: 80%;
+}
+ 
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+ 
+/*Menu responsive*/
+.btnMenu img{
+    width: 2.5rem;
+    padding: 0.9375rem;
+}
+
+nav {
+    margin-left: 10%;
+    width: 90%;
+    background-color:#EDDDC3;
+    z-index: 1;
+    position: sticky;
+}
+ 
+ul.navegacion {
+    display:none;
+}
+ 
+ul.navegacion.mostrar {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3125rem;
+    background: linear-gradient(to bottom,#EDDDC3,#E7ECCC);
+    margin: 0rem;
+}
+ 
+ul.navegacion li {
+    list-style: none;
+    padding: 3.125rem;
+    width: 100%;
+    border-bottom: solid white 0.0625rem;
+}
+ 
+ul.navegacion li a {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    color: #645d52;
+    font-size: large;
+}
+ 
+ul.navegacion li:hover{
+    background:#C3BAA9;
+}
+
+.selected{
+    background-color:yellow;
+}
+
+/*PIE DE PAGINA*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDDDC3;
+    list-style: none;
+    padding: 0.625rem;
+}
+ 
+/*Pie que contiente las redes y el contacto*/
+.piePrimero {
+    display: flex;
+    flex-direction: column;
+}
+ 
+/*Seccion de contacto*/
+.columna1 {
+    display: flex;
+    text-transform: uppercase;
+    font-size: medium;
+    justify-content: center;
+}
+ 
+footer p {
+    padding: 0rem;
+    margin: 0rem;
+    font-size: small;
+}
+ 
+.pieSocial {
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.columna2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3125rem;
+    padding: 0rem;
+}
+
+/*Logos de seccion de contacto*/
+.columna2 img {
+    width: 1.25rem;
+    margin: 0.3125rem;
+}
+  
+ /*Seccion copyright*/
+.pieSegundo{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     align-items: center;
+}
+  
+.copyright {
+     font-size:xx-small;
+     padding: 0rem;
+     margin: 0rem;
+}
+
+/*INICIO MOBILE FIRST*/
+
+.mates{
+    display: grid;
+    grid-auto-flow: column;
+    overflow: auto; 
+}
+
+.mates img {
+    border-radius: 0.625rem;
+    width: 12rem;
+    margin: 0.625rem;
+}
+ 
+.presentacion {
+    background-color: #C3BAA9;
+    padding: 2rem;
+    margin: 0.625rem;
+    color: white;
+    font-size:large;
+    border-radius: 0.625rem;
+}
+ 
+.presentacion p {
+    color: white;
+}
+ 
+.tipsMates {
+    background-color: #E7ECCC;
+    margin: 2.5rem;
+    color: #645d52;
+    font-size: medium;
+    border-radius: 0.625rem;
+    padding: 1rem;
+}
+ 
+div.tipsMates h2 {
+    background-color: #2F6243;
+    color: #EDDDC3;
+    text-align: center;
+    margin: 0rem;
+    padding: 0rem;
+    border-radius: 0.625rem;
+}
+ 
+div.tipsMates ol {
+    padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+    margin: 0rem;
+}
+ 
+.tipsImagen { 
+    display: none;
+}
+
+
+/*PRODUCTO MOBILE FIRST*/
+.contenedorProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.columnaYerbas { 
+    width: 90%;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 2.1875rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-style: unset;
+    color: grey;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-style: unset;
+    padding-left: 0.9375rem;
+}
+
+span  {
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.yerbas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenYerba {
+    display: flex;
+    width: 15.5625rem;
+    height: 17.8125rem;
+    justify-content: center;
+    border-radius: 0.625rem;
+}
+
+.columnaComparacion {
+    background-color: #EDDDC3;
+    width: 90%;
+    margin: 1rem;
+    margin-top: 0.625rem;
+    top: 12.5rem; 
+    border-radius: 0.625rem;
+}
+
+.columnaComparacion h3{
+    padding: 0.7rem;
+    text-align: center;
+}
+.tituloCuadroSabores td {
+    border-bottom: rgb(248, 242, 242); 
+    border-radius: 0.1875rem;
+    text-align: center;
+    background-color: white;
+    padding: 0.625rem;
+    margin: 0rem;
+}
+
+.tituloCuadroSabores {
+    font-size: 0.9375rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0.600rem;
+    
+}
+
+.tablaComparacion {
+    padding: 1rem;
+}
+
+.tablaComparacion td {
+    background-color:white;
+    padding: 1rem;
+}
+
+
+
+/*CONTACTO MOBILE FIRST*/
+
+/*Tabla dinamica*/
+
+.contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    margin: 0%;
+}
+
+.contenedorTablayRedes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+}
+
+.tablaDinamica { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: black;
+    margin: 1rem;
+}
+
+#tablaComentarios th {
+    padding: 1rem;
+    border: none;
+    height: 3.125rem;
+    background-color: #EDDDC3;
+}
+
+#tablaComentarios td {
+    padding: 0.5rem;
+}
+
+.filaBotonesTabla {
+    width: 13%;
+}
+
+.botonesFormulario, .btnBorrar, .btnEditar{
+    background-color: #EDDDC3;
+    border: none;
+    width: 95%;
+    margin-top: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+form#formComentarios {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    margin: 0rem;
+}
+
+.oculto {
+    display: none;
+}
+
+#btnFormularioEditar {
+    width: 96%;
+}
+
+.tituloRedes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color:#E7ECCC;
+    margin: 1rem;
+    justify-content: center;
+    border-radius: 0.625rem;
+}
+
+.columnaRedes {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* iconos redes */
+.redesIzquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: xx-large;
+}
+
+.redesDerecha {
+    padding: 1.25rem;
+}
+
+.redesDerecha p {
+    margin: 2.625rem;
+    text-align: center;
+    font-size: large; 
+} 
+
+div.columnaRedes div.columna2 div p {
+    font-size: medium;
+}
+
+.tituloRedes h2 {
+    font-size: x-large;
+}
+
+.columnaFormulario {
+    width: 80%;
+    background-color: #EDDDC3;
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#codigoCaptcha {
+    width: 90%;
+    padding: 0.3125rem;
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    background-image: url("../images/fondoCaptcha.png");
+    color: white;
+}
+
+label { 
+    display: block;
+    color: #57544f;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+    margin: 0.625rem 0rem 0rem 0rem;
+}
+
+input, textarea {
+    background-color: azure;
+    width: 95%;
+    border: none;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    color: #57544f;
+    border-radius: 0.5rem;
+}
+
+#btnEnviar {
+    width: 95%;
+    text-transform: uppercase;
+    color: #57544f;
+    background-color: white;
+    margin: 1rem;
+}
+
+#validacion {
+    color: #383633;
+    font-style: italic;
+    font-size: small;
+}
+
+.columnaRedes hr {
+    display: flex;
+}
+
+
+@media only screen and (min-width: 900px) {
+  
+    /*INDEX DESKTOP*/
+    
+    header {
+        display: flex;
+        flex-direction: row;
+  
+    }
+    .btnMenu {
+        display: none;
+    }
+  
+    nav {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        width: 30%;
+        height: 100%;
+        margin: 0rem;
+        background-color: #EDDDC3;
+    }
+     
+    ul.navegacion {
+        display: flex;
+        flex-direction: row;
+        margin: 0.625rem;
+        padding: 0.625rem;
+    }
+     
+    ul.navegacion li {
+        text-decoration: none;
+        list-style: none;
+        text-transform: uppercase; 
+        color: #645d52;
+        padding: 0.625rem;
+    }
+     
+    /*Pie de pagina*/
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #EDDDC3;
+        height: 4.875rem;
+        list-style: none;
+        padding: 0rem;
+        margin: 0rem;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    footer p {
+        font-size: medium;
+    }
+     
+    /*Pie que contiente las redes y el contacto*/
+    .piePrimero {
+        display: flex;
+        flex-direction: row;  
+        height: 4.875rem;
+    }
+     
+    /*Seccion de contacto*/
+    .columna1 {
+        display: flex;
+        align-items: center;
+        padding: 0.3125rem;
+        margin: 0.625rem;
+        text-transform: uppercase;
+    }
+     
+    .pieSocial {
+        display: flex;
+    }
+     
+    .columna2 {
+        display: flex;
+        flex-direction: row;
+        padding: 0.3125rem;
+        margin: 0.3125rem;
+        align-items: center;
+    }
+     
+    /*Logos de seccion de contacto*/
+    .redesSociales {
+        width: 1.875rem;
+        margin: 0.3125rem;
+    }
+     
+    /*Seccion copyright*/
+    .pieSegundo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 18.75rem;
+    }
+     
+    .copyright {
+        margin: 0.3125rem;
+        font-size: 0.625rem;
+    }
+     
+    .contenedorIndex {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .presentacion {
+        background-color: #C3BAA9;
+        margin: 4.375rem;
+        padding: 3.125rem;
+        width: 50%;
+        height: 80%;
+        color: white;
+        font-size: medium;
+    }
+
+    .mates{
+        display: flex;
+    }
+    .mates img {
+        width: 30%;
+        margin: 0.625rem;
+    }
+
+    .mates::-webkit-scrollbar {
+        display: none;
+    }
+     
+    .tipsMates {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        margin: 4.375rem;
+    }
+    .tipsImagen{
+        display: block;
+        padding: 0.625rem;
+        width: 70%;
+        border-radius: 50%;
+    }
+     
+    .tipsMates h2 {
+        width: 100%;
+    }
+
+    /*PRODUCTOS DESKTOP*/
+
+    /*linea que separa los productos*/
+    hr {
+        display: none;
+    }
+
+    .contenedorProductos {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .columnaYerbas {
+        width: 55%;
+    }
+
+    /*contiene a la imagen y al texto de cada yerba */
+    div.yerbas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imagenYerba {
+        padding: 1.25rem;
+        margin-left: 2rem;
+    }
+
+    /*cuadro comparativo de los distintos sabores */
+    .columnaComparacion {
+        width: 35%;
+        position: sticky; 
+        margin: 1.5625rem;
+        padding: 0.625rem;
+    }
+
+    .tablaComparacion {
+        display: flex;
+        justify-content: center; 
+    }
+
+
+    /*CONTACTO*/
+
+    
+    .contenedorTablayRedes {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+    }
+   
+    #tablaComentarios {
+        width: 95%;
+        padding: 0rem;
+        margin: 1rem;   
+    }
+
+    input {
+        width : 94%;
+         margin: 0.125rem;
+    }
+
+    .contenedorContacto {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .tituloRedes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columnaRedes {
+        flex-direction:row;
+        align-items: baseline;
+        height: 70%; 
+    }
+
+    .columnaFormulario {
+        width: 18%;
+        height: 100%;
+    }
+
+    #formComentarios {
+        margin-left: 1rem;
+    }
+
+    .botonesFormulario, .btnBorrar, .btnEditar{
+        width: 45%;
+    }
+}
+     
